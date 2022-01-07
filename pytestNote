@@ -1,0 +1,66 @@
+一、pytest单元测试框架
+（1）单元测试是指在软件开发当中，针对软件的最小单位（函数、方法）进行正确性的检查测试
+（2）单元测试框架
+    java：junit和TestNG
+    python：unittest和pytest
+（3）单元测试框架主要坐什么?
+    1.测试发现：从多个文件中找到我们测试用例
+    2.测试执行：按照一定的顺序和规则去执行，并生成结果
+    3.测试判断：通过断言判断预期结果与实际结果的差异
+    4.测试报告：统计测试进度，耗时，通过率，生成测试报告
+二、单元测试框架和自动化测试框架有什么关系？
+（1）什么是自动化测试框架
+（2）作用
+   1.提高测试效率，降低维护成本
+   2.减少人工干预，提高测试准确性，增加代码重用性
+   3.核心思想是让不懂代码的人页能够通过这个框架去实现自动化测试
+（3）pytest单元测试框架和自动化测试框架的关系
+    单元测试框架:只是自动化测试框架的组成部分之一
+    pom设计模式：只是自动化测试框架中的组成部分之一
+    数据驱动
+    关键字驱动
+    全局配置文件封装
+    日志监控
+    selenium、requests二次封装
+    断言
+    报告邮件
+    更多。。。。。。。。。。
+三、pytest简介
+1.pytest是一个非常成熟的python的单元框架，比unittest更灵活，容易上手
+2.pytest可以和selenium、requests、appium结合实现web自动化，接口自动化，app自动化
+3.pytest可以实现测试用例的跳过以及reruns失败用例重试
+4.pytest可以和allure生成非常美观的测试报告
+5.pytest恶意和jekins持续集成
+6.pytest有很多非常强大的插件，并且这些插件能够实现很多的实用操作
+   pytest-html ---生成html格式的自动化测试报告
+   pytest-xdist ---测试用例分布式执行，多CPU分发
+   pytest-ordering ---用于改变测试用例的执行顺序
+   pytest-returnfailures 用例失败后重泡
+   allure-pytest   ----用于生成美观的测试报告
+   放到requirements.txt中，通过pip install -r requirements.txt
+四、实用pytest，默认的测试用例的规则以及从基础应用
+1.模块名必须以test_开头或者_test结尾
+2.测试类必须以Test开头，并且不能有init方法
+3.测试方法必须以test开头
+五、pytest测试用例的运行方式
+1.主函数模式
+  （1）运行所有:pytest.main()
+  （2）指定模块:pytest.main(['-vs','test_login.py'])
+  （3）指定目录:pytest.main(['-vs','./test_cases'])
+   (4)通过该nodeid指定用例执行:nodeid由模块名、分隔符、类名、方法名、函数名组成
+      pytest.main(['-vs','./testcases/test_login.py::test_01_baili01'])
+      pytest.main(['-vs','./testcases/test_login.py::TestLogin::test_01_baili'])
+      ---------------------------------python2.7不支持
+2.命令行模式
+  (1)运行所有:pytest
+  (2)指定模块:pytest -vs testcases/test_login.py
+  (3)指定目录:pytest.main -vs ./test_cases
+  (4)通过该nodeid指定用例执行:nodeid由模块名、分隔符、类名、方法名、函数名组成
+   pytest -vs ./testcases/test_login.py::test_01_baili01
+   pytest -vs ./testcases/test_login.py::TestLogin::test_01_baili
+
+  参数详解：
+   -s：表示输出调试信息，
+   -v：输出更详细调试信息
+   -vs：输出全面组合详细调试信息
+3.通过读取pytest.ini配置文件执行

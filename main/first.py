@@ -4,3 +4,8 @@
  @功能模块:
  @模块备注:
 """
+import pytest
+
+
+def test_01_baili02():
+    print('测试百里02')

@@ -3,4 +3,6 @@
   账号：3343674462@qq.com
   密码：faj@123456
 3.github访问提速:谷歌应用商店下载GitHub加速插件，添加谷歌浏览器上
-4.
+4.解决GitHub推送超时失败，控制面板-->网络和Internet-->Internet选项-->连接-->局域网设置-->勾选自动检测设置;
+  链接:https://yangy.blog.csdn.net/article/details/104040279?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&utm_relevant_index=1
+5.

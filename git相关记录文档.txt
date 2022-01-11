@@ -7,3 +7,25 @@
   链接:https://yangy.blog.csdn.net/article/details/104040279?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&utm_relevant_index=1
 5.GitHub总是提示超时无法访问解决：
   链接：https://blog.csdn.net/weixin_46308182/article/details/107850980?spm=1001.2101.3001.6650.4&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-4.no_search_link&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-4.no_search_link&utm_relevant_index=8
+
+=======================================================================================================================
+ 前置条件：本地先创建文件夹【区分需要】
+  第一步：$ git clone http://192.168.0.55/front-end-project/car-dealer-sass/car-dealer-sass-h5.git
+  第二步：$ cd car-dealer-sass-h5/
+  第三步：$ git checkout test
+  第四步：$ git pull       -------拉取最新项目
+  第五步：$ git branch -l  -------查看当前分支状况，目前所在分支
+  第六步：$ git checkout dev -------切换到dev分支
+  第七步：$ git branch -v
+  第八步：$ git checkout test -------切换到test分支
+  第九步：$ git merge dev    --------将dev分支合并到当前分支
+  第十步：$ git push         --------推送
+  Gitlab创建分支：在项目gitlab主页面，点击master后面“+”，选择“new branch”创建新的分支
+  git命令创建本地分支并推送同步到远程：
+   1.本地创建并切换到dev分支
+       git checkout -b dev    
+   2.将dev分支推送到远程
+     git push origin dev:dev
+     冒号前面的dev：推送本地的dev分支到远程origin
+     冒号后面的dev：远程origin没有会自动创建
+=========================================================================================================================

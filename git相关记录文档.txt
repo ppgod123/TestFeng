@@ -10,3 +10,4 @@
 6.github邀请人确认密码：faj@123456
 7.解决github访问过慢问题:https://www.cnblogs.com/zouhong/p/12393083.html
 8.新年第一次学习python课程2022年2月7日11:07:38
+9.今天开始决定正式学习python
